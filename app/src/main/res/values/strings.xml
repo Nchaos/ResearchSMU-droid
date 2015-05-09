@@ -7,4 +7,15 @@
     <string name="Register">Register</string>
     <string name="title_activity_clicked_list">ClickedList</string>
     <string name="logo">logo</string>
+    <string name="lyle">Lyle School of Engineering</string>
+    <string name="dept">Department</string>
+    <string name="school"><![CDATA[Computer Science & Engineering]]></string>
+    <string name="prof">Professor</string>
+    <string name="darock">Dwayne The Rock Johnson</string>
+    <string name="title">Research Title</string>
+    <string name="virtualgirl">Virtual Girlfriend Creation</string>
+    <string name="description">Description</string>
+    <string name="createagirl">Create a girlfriend so you do not have to talk to real people!</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_login">Login</string>
 </resources>

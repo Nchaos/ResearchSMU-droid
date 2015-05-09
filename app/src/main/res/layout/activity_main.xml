@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Login"
-        android:id="@+id/button"
+        android:id="@+id/login"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -21,16 +21,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Register"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
-        android:layout_toLeftOf="@+id/button"
-        android:layout_toStartOf="@+id/button" />
+        android:id="@+id/register"
+        android:layout_alignTop="@+id/login"
+        android:layout_toLeftOf="@+id/login"
+        android:layout_toStartOf="@+id/login" />
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listViewMain"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/login"
         android:layout_centerHorizontal="true"
         android:headerDividersEnabled="false" />
 
@@ -38,13 +38,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:layout_alignTop="@+id/button2"
+        android:layout_alignTop="@+id/register"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:src="@drawable/smu_logo"
         android:layout_above="@+id/listViewMain"
-        android:layout_toLeftOf="@+id/button2"
-        android:layout_toStartOf="@+id/button2"
+        android:layout_toLeftOf="@+id/register"
+        android:layout_toStartOf="@+id/register"
         android:contentDescription="@string/logo" />
 
 </RelativeLayout>

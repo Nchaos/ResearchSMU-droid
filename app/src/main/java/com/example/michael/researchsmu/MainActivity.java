@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +23,34 @@ public class MainActivity extends ActionBarActivity {
 
         populateListView();
         registerClickCallBack();
+        registerButtonRegClick();
+        registerButtonLoginClick();
+    }
+
+    private void registerButtonRegClick()
+    {
+        Button reg = (Button)findViewById(R.id.register);
+        reg.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, Register.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
+
+    private void registerButtonLoginClick()
+    {
+        Button log= (Button)findViewById(R.id.login);
+        log.setOnClickListener(new View.OnClickListener()
+        {   public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void populateListView()
@@ -42,7 +71,7 @@ public class MainActivity extends ActionBarActivity {
             public void onItemClick(AdapterView<?> parent, View viewClicked, int position, long id)
             {
                 TextView textView = (TextView) viewClicked;
-                String message = "Clicked on " + position + " which is " + textView.getText().toString();
+                String message = "Welcome to " + textView.getText().toString();
                 Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
 
                 startActivity(new Intent(MainActivity.this,ResearchOpportunities.class));
